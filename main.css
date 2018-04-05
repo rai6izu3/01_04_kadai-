@@ -1,0 +1,134 @@
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+body {
+    color: #fff;
+    font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Navigation Settings */
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #eee;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
+
+section {
+    height: 100vh;
+}
+
+/* Screens Settings */
+#screen1 {
+    background-image: url(./img/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#screen2 {
+    background-image: url(./img/main2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#screen3 {
+    background-image: url(./img/bluegreyarangement.png),
+                      url(./img/lightbluebouquet.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: left 250px,
+                          right 50px;
+    text-align: center;
+    color: black;
+}
+
+#screen4 {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+
+#screen5 {
+    background-image: url(./img/main5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 520px) {
+
+    nav li {
+        padding: 24px 4px;
+    }
+
+    nav li a {
+        font-size: 14px;
+    }
+
+}
+
+h1{
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+table{
+  margin: auto;
+}
+.form{
+  color: #000;
+  font-size: 30px;
+  margin: auto;
+}
+
+input[type="text"]{
+  font-size: 30px;
+  border-radius: 6px;
+}
+
+input[type="radio"]{
+  transform: scale(2);
+}
+
+table tr th{
+  text-align: left;
+  padding: 20px;
+}
+
+#screen5  p{
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+.button{
+  width: 150px;
+  height: 300px;
+  font-size:50px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>5.12 HAPPY SUMMER WEDDING</title>
+</head>
+<body>
+<section id="screen1">
+    <nav>
+       <ul>
+        <li><a href="#screen1">TOP</a></li>
+        <li><a href="#screen2">”BIG”DATE</a></li>
+        <li><a href="#screen3">GREETING</a></li>
+        <li><a href="#screen4">DETAIL</a></li>
+        <li><a href="#screen5">ATTENDANCE</a></li>
+      </ul>
+    </nav>
+
+</section>
+
+<section id="screen2"></section>
+<section id="screen3">
+    <p></p><br>
+    <p></p><br>
+    <p></p><br>
+    <p></p><br>
+    <p>拝啓</p><br>
+    <p>新緑の候</p><br>
+    <p>皆様におかれましては いよいよご清祥のこととお慶び申し上げます</p><br>
+
+    <p>かねて婚約中の私たちはこのたび結婚式を挙げ</p><br>
+    <p>新しい第一歩を踏み出すことになりました</p><br>
+    <p>つきましては　日頃よりご交誼いただいております皆様により一層のご指導を賜りたく</p><br>
+    <p>ささやかながら小宴を催したいと存じます</p><br>
+    <p>ご多用中　誠に恐縮ではございますが</p><br>
+    <p>ぜひご出席をいただきたく　ご案内申し上げます</p><br>
+
+    <p>敬具</p><br>
+    <p></p><br>
+    <p>平成○年○月吉日</p><br>
+    <p>○○○○（新郎氏名）</p><br>
+    <p>○○○○（新婦氏名）</p><br>
+    <p></p><br>
+    <p></p><br>
+</section>
+<section id="screen4">
+    <div class="date">
+      <p></p><br>
+      <p></p><br>
+      <p>記</p><br>
+      <p>日時　平成○○年○月○日</p><br>
+      <p>午後○時○分（午前○時○分受付）</p><br>
+      <p>場所　目黒雅叙園　鶴の間</p><br>
+      <p>〒153-0064 東京都目黒区下目黒１丁目８−１</p><br>
+      <p>電話番号　03-1234-5678</p><br>
+      <p>（目黒線・JR線　目黒駅 下車 5分）</p><br>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12971.306096886057!2d139.7135371!3d35.6320029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2f76f0da5a3ba9dc!2z44Ob44OG44Or6ZuF5Y-Z5ZyS5p2x5Lqs!5e0!3m2!1sja!2sjp!4v1521130648943" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</section>
+<section id="screen5">
+  <h1>出欠をフォームよりご記入ください</h1>
+  <form class="form" action="main.php" method="post">
+    <table>
+      <tr><th>お名前：</th><td><input type="text" name="name" value=""></td></tr>
+      <tr><th>郵便番号：</th><td><input type="text" name="yuubin" value=""></td></tr>
+      <tr><th>住所：</th><td><input type="text" name="jyuusyo" value=""></td></tr>
+      <tr><th>電話番号：</th><td><input type="text" name="yuubinbangou" value=""></td></tr>
+      <tr>
+        <th>出欠：</th>
+          <td><input type="radio" name="syukketsu[]" value="syusseki"><label for=""> 出席　</label>
+              <input type="radio" name="syukketsu[]" value="kesseki"><label for=""> 欠席　</label>
+              <input type="radio" name="syukketsu[]" value="horyuu"><label for=""> 保留　</label>
+          </td>
+      </tr>
+      <tr><th></th><td><input type="submit" name="" value="送信" class="button"></td></tr>
+    </form>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="main.js" charset="utf-8"></script>
+</body>
+</html>
