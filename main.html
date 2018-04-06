@@ -64,20 +64,20 @@
 </section>
 <section id="screen5">
   <h1>出欠をフォームよりご記入ください</h1>
-  <form class="form" action="main.php" method="post">
+  <form class = "form" action = "main.php" method = "POST">
     <table>
-      <tr><th>お名前：</th><td><input type="text" name="name" value=""></td></tr>
-      <tr><th>郵便番号：</th><td><input type="text" name="yuubin" value=""></td></tr>
-      <tr><th>住所：</th><td><input type="text" name="jyuusyo" value=""></td></tr>
-      <tr><th>電話番号：</th><td><input type="text" name="yuubinbangou" value=""></td></tr>
+      <tr><th>お名前：</th><td><input id="text" type="text" name="name" value=""></td></tr>
+      <tr><th>郵便番号：</th><td><input id="text" type="text" name="yuubin" value=""></td></tr>
+      <tr><th>住所：</th><td><input id="text" type="text" name="jyuusyo" value=""></td></tr>
+      <tr><th>電話番号：</th><td><input id="text" type="text" name="tel" value=""></td></tr>
       <tr>
         <th>出欠：</th>
-          <td><input type="radio" name="syukketsu[]" value="syusseki"><label for=""> 出席　</label>
-              <input type="radio" name="syukketsu[]" value="kesseki"><label for=""> 欠席　</label>
-              <input type="radio" name="syukketsu[]" value="horyuu"><label for=""> 保留　</label>
+          <td><input type="radio" name="syukketsu" value="s"><label for=""> 出席　</label>
+              <input type="radio" name="syukketsu" value="k"><label for=""> 欠席　</label>
+              <input type="radio" name="syukketsu" value="h"><label for=""> 保留　</label>
           </td>
       </tr>
-      <tr><th></th><td><input type="submit" name="" value="送信" class="button"></td></tr>
+      <tr><th></th><td><input type="submit" name="" value=""  class="submit_btn"></td></tr>
     </form>
 </section>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

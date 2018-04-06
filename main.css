@@ -127,8 +127,18 @@ table tr th{
   font-weight: bold;
 }
 
-.button{
-  width: 150px;
-  height: 300px;
-  font-size:50px;
+.submit_btn{
+  border: 0px;
+  width:250px;
+  border-radius:8px;
+  height:105px;
+  background: url(./img/yesbutton.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.submit_btn:hover {
+position : relative;
+top : 3pt;
+left : 3pt;
 }
